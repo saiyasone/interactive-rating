@@ -33,12 +33,32 @@ body {
   padding: 25px;
 }
 
+@media (max-width: 500px) {
+  .interactive-container .container {
+    max-width: 500px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 450px) {
+  .interactive-container .container {
+    max-width: 380px;
+    padding: 15px;
+  }
+}
+
 .container .card {
   border-radius: 12px;
   background-color: var(--thin-dark-color);
 }
 .card .card-body {
   padding: 30px 40px;
+}
+
+@media (max-width: 500px) {
+  .card .card-body {
+    padding: 20px 30px;
+  }
 }
 
 .container .interactive-done {
@@ -102,6 +122,22 @@ body {
   color: var(--white-color);
   font-size: 2rem;
 }
+@media (max-width: 500px) {
+  .card-body .card-img {
+    width: 40px;
+    height: 40px;
+  }
+  .card-img img {
+    width: 17px;
+    height: 17px;
+  }
+  .card-body .card-title {
+    padding: 18px 0;
+  }
+  .card-title h2 {
+    font-size: 1.8rem;
+  }
+}
 
 .card-body .card-subtitle {
   margin-bottom: 2rem;
@@ -136,6 +172,14 @@ body {
   font-size: 1rem;
   vertical-align: middle;
   transition: 0.2 all;
+}
+
+@media (max-width: 450px) {
+  .card-item button {
+    width: 40px;
+    height: 40px;
+    font-size: 0.8rem;
+  }
 }
 .card-item button:hover {
   background-color: var(--orange-color);
