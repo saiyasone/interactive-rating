@@ -1,1 +1,169 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@300&family=Open+Sans&family=Outfit:wght@300;400&family=Overpass:wght@300;500&family=Poppins&family=Roboto:wght@300;500&family=Ubuntu:wght@300&display=swap");
+
+:root {
+  --orange-color: #fb7413;
+  --dark-color: #121417;
+  --thin-dark-color: #252d37;
+  --white-color: #ffffff;
+  --thin-grey-color: #959eac;
+  --grey-color: #7c8798;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  background-color: var(--dark-color);
+}
+
+.interactive-container {
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.interactive-container .container {
+  max-width: 500px;
+  padding: 25px;
+}
+
+.container .card {
+  border-radius: 12px;
+  background-color: var(--thin-dark-color);
+}
+.card .card-body {
+  padding: 30px 40px;
+}
+
+.container .interactive-done {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.interactive-done .done-img {
+  width: 100%;
+}
+.done-img img {
+  width: 160px;
+  object-fit: contain;
+}
+.interactive-done .done-label {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.done-label .label {
+  display: block;
+  padding: 8px 20px;
+  background-color: #2f3a46;
+  border-radius: 30px;
+}
+.label span {
+  color: var(--orange-color);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.interactive-done h2 {
+  color: var(--white-color);
+  margin-bottom: 1rem;
+}
+.interactive-done p {
+  color: var(--grey-color);
+  line-height: 1.5;
+}
+
+.card-body .card-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #2f3a46;
+}
+.card-img img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+}
+
+.card-body .card-title {
+  padding: 25px 0;
+}
+.card-title h2 {
+  color: var(--white-color);
+  font-size: 2rem;
+}
+
+.card-body .card-subtitle {
+  margin-bottom: 2rem;
+}
+.card-subtitle p {
+  color: var(--grey-color);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.card-body .card-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-list .card-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.card-item button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 0;
+  outline: none;
+  color: #ffffff;
+  background-color: #2f3a46;
+  cursor: pointer;
+  font-size: 1rem;
+  vertical-align: middle;
+  transition: 0.2 all;
+}
+.card-item button:hover {
+  background-color: var(--orange-color);
+}
+.card-item button.active {
+  background-color: var(--grey-color);
+}
+
+.card-body .card-action {
+  margin-top: 2rem;
+}
+.card-action button {
+  border: 0;
+  outline: none;
+  width: 100%;
+  height: 45px;
+  padding: 6px 12px;
+  color: var(--white-color);
+  /* text-transform: uppercase; */
+  font-size: 1rem;
+  text-align: center;
+  background-color: var(--orange-color);
+  border-radius: 30px;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: 0.3s all;
+}
+.card-body .card-action button:hover {
+  color: var(--orange-color);
+  background-color: var(--white-color);
+}
